@@ -10,20 +10,6 @@
     </head>
     <body>
        <script id='script-source-code'  type="text/javascript" language="JavaScript">
-			  //下面的代码验证了，解析器应该是先将所有的变量加入到上下文的变量列表中，并设值为undefined
-			  //然后再把function进行解析同样加入到上下文的变量列表中
-			  log(foo);
-			  log(test);
-			  var foo=function(){return 3;}
-			  function foo(){
-			  	return 4;
-			  }
-			  function test(){
-			  	return 5;
-			  }
-			  var test=function(){
-			  	return 6;
-			  }
 			  //只有firefox会是1，其他IE6/opera/chrome都是2
 			  if(true) {
 			    function foo(){ return 1; }
@@ -31,10 +17,7 @@
 			  else {
 			    function foo(){ return 2; }
 			  }
-			  log(foo);
-			  log(test);
 			  log(foo());
-			  
 
 		</script>
     </body>

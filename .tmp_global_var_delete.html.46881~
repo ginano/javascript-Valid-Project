@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="gbk"/>
+        <title>全局变量的区别--javascript趣味探索系列，前端开发之Ginano</title>
+        <meta name="description" content="全局变量的区别，javascript趣味探索系列,前端开发之Ginano"/>
+        <meta name="keywords" content="全局变量的区别，javascript趣味探索系列，前端开发之Ginano"/>
+		<script type="text/javascript" language="JavaScript" src="src/common.js"></script>
+        <link rel="stylesheet" href="src/common.css"/>
+    </head>
+    <body>
+       <script id='script-source-code' type="text/javascript" language="JavaScript">
+			// 定义三个全局变量
+			//校验未声明的全局变量将成为挂载再window全局对象下的属性，因此可以delete
+			var global_var = 1;
+			global_novar = 2; // 反面教材
+			(function () {
+			   global_fromfunc = 3; // 反面教材
+			}());
+			
+			// 试图删除
+			log(delete global_var);  
+			log(delete global_novar);  
+			log(delete global_fromfunc);  
+			
+			// 测试该删除
+			log(typeof global_var);  
+			log(typeof global_novar);  
+			log(typeof global_fromfunc);  
+
+
+		</script>
+    </body>
+</html>

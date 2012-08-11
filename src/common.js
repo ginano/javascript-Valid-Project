@@ -17,8 +17,9 @@ var isDebug=/debug/i.test(window.location.hash);
 				}
 				ol = document.getElementById('debug-list');
 				ol.innerHTML = ol.innerHTML + '<li>' + str + '</li>';
-				loginfos.push(str);
+				
 			}
+			loginfos.push(str);
 		},
 		_getLog=function(index){
 			if(typeof loginfos[index]!==undefined){
