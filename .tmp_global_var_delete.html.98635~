@@ -5,8 +5,8 @@
         <title>全局变量的区别--javascript趣味探索系列，前端开发之Ginano</title>
         <meta name="description" content="全局变量的区别，javascript趣味探索系列,前端开发之Ginano"/>
         <meta name="keywords" content="全局变量的区别，javascript趣味探索系列，前端开发之Ginano"/>
-		<script type="text/javascript" language="JavaScript" src="src/common.js"></script>
-        <link rel="stylesheet" href="src/common.css"/>
+		<script type="text/javascript" language="JavaScript" src="common.js"></script>
+        <link rel="stylesheet" href="common.css"/>
     </head>
     <body>
        <script id='script-source-code' type="text/javascript" language="JavaScript">

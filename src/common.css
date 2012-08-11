@@ -1,0 +1,27 @@
+a,
+a:visited{
+	color:#444;
+}
+a:hover{color:#ff7300;}
+#logging{
+	margin:20px;
+	background:#fff;
+	color:red;
+	border:1px solid #c00;
+	padding:8px;
+	font-size:14px;
+	
+}
+
+#declare,
+#script-source-show{
+	margin:20px;
+	padding:8px;
+	line-height:20px;
+	font-size:12px;
+	color:#666;
+}
+
+#script-source-show{background-color: #F0F0F0;}
+#script-source-show .debug-result-item{color:#ff7300;}
+#logging h3,#declare h3{margin: 8px 0;line-height:22px;}
