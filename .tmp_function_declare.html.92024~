@@ -48,30 +48,16 @@
 				};
 			}
 			log(typeof g);
+			log(g()); 
 			
 			//------看看全局变量gg设置成功了没---
 			
 			(function(){
 				gg = function gg(){};
 				log(gg);
-				
 			})();
 			log(gg);	
-			//----匿名函数的this-------
-			(function(){
-				log(this);
-				(function(){
-					log(this);
-					(function(){
-						log(this);
-						var dd=function sfd(){
-							log(this);
-						};
-						dd();
-					})();
-				})();
-			})();
-			
+
 		</script>
     </body>
 </html>
